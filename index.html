@@ -591,7 +591,7 @@
         <h2 class="section-title">Hi, I'm<br />Sean.</h2>
         <p>I'm a Certified Flight Instructor based at Corvallis Municipal Airport (KCVO), flying throughout Oregon's Willamette Valley. My goal is simple: help you become a safe, confident, and capable pilot.</p>
         <p>I instruct through the <a href="https://oregonstateflyingclub.org" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(200,153,58,0.4); transition: text-decoration-color 0.2s;"><strong>Oregon State Flying Club</strong></a>, which provides access to well-maintained club aircraft. If you have your own airplane, I'm happy to instruct in that as well — just bring it and let's fly.</p>
-        <p>Whether you're taking your very first discovery flight or working toward your instrument rating, I'll tailor every lesson to how you learn best. I'm also currently working toward my CFII to guide students through instrument training in the near future.</p>
+        <p>Whether you're taking your very first discovery flight or working toward your commercial certificate, I'll tailor every lesson to how you learn best.</p>
         <a href="#contact" class="btn-primary" style="display:inline-block; margin-top: 1rem;">Start Flying Today</a>
       </div>
 
@@ -707,13 +707,21 @@
               <div class="contact-method-value">(503) 576-9486</div>
             </div>
           </a>
-          <a href="/cdn-cgi/l/email-protection#702315111e5e03001f15021811031530171d11191c5e131f1d" class="contact-method">
+          <a href="#" class="contact-method" id="email-link">
             <span class="contact-method-icon">✉️</span>
             <div>
               <div class="contact-method-label">Email</div>
-              <div class="contact-method-value"><span class="__cf_email__" data-cfemail="c89bada9a6e6bbb8a7adbaa0a9bbad88afa5a9a1a4e6aba7a5">[email&#160;protected]</span></div>
+              <div class="contact-method-value" id="email-val"></div>
             </div>
           </a>
+          <script>
+            (function(){
+              var a="Sean.spo";var b="erhase";var c="@gma";var d="il.com";
+              var full=a+b+c+d;
+              document.getElementById("email-val").textContent=full;
+              document.getElementById("email-link").setAttribute("href","mailto:"+full);
+            })();
+          </script>
         </div>
       </div>
       <div class="contact-right">
