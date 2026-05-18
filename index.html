@@ -554,7 +554,7 @@
 
   <!-- NAV -->
   <nav>
-    <div class="nav-logo">Sean Spoerhase · CFI</div>
+    <div class="nav-logo">Sean Spoerhase · CFI, CFII</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#training">Training</a></li>
@@ -570,7 +570,7 @@
     <div class="hero-content">
       <p class="hero-eyebrow">Certified Flight Instructor · Willamette Valley, Oregon</p>
       <h1 class="hero-title">Ready to<br /><span>Learn to Fly?</span></h1>
-      <p class="hero-sub">Personalized flight training from a passionate CFI based out of KCVO — serving airports across the Willamette Valley.</p>
+      <p class="hero-sub">Personalized flight and instrument training from a passionate CFI/CFII based out of KCVO — serving airports across the Willamette Valley.</p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Get in Touch</a>
         <a href="#training" class="btn-outline">See Training Options</a>
@@ -591,7 +591,7 @@
         <h2 class="section-title">Hi, I'm<br />Sean.</h2>
         <p>I'm a Certified Flight Instructor based at Corvallis Municipal Airport (KCVO), flying throughout Oregon's Willamette Valley. My goal is simple: help you become a safe, confident, and capable pilot.</p>
         <p>I instruct through the <a href="https://oregonstateflyingclub.org" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(200,153,58,0.4); transition: text-decoration-color 0.2s;"><strong>Oregon State Flying Club</strong></a>, which provides access to well-maintained club aircraft. If you have your own airplane, I'm happy to instruct in that as well — just bring it and let's fly.</p>
-        <p>Whether you're taking your very first discovery flight or working toward your comercial, I'll tailor every lesson to how you learn best. I'm also currently working toward my CFII to guide students through instrument training in the near future.</p>
+        <p>Whether you're taking your very first discovery flight or working toward your commercial, I'll tailor every lesson to how you learn best. As a CFII, I can also help you build instrument proficiency and prepare for instrument-focused training.</p>
         <a href="#contact" class="btn-primary" style="display:inline-block; margin-top: 1rem;">Start Flying Today</a>
       </div>
 
@@ -601,12 +601,12 @@
           <div class="cred-item">
             <div class="cred-icon">✈️</div>
             <div class="cred-title">CFI</div>
-            <div class="cred-desc">Certified Flight Instructor — Single Engine Land</div>
+            <div class="cred-desc">Certified Flight Instructor — Single Engine Land (CFI)</div>
           </div>
           <div class="cred-item">
             <div class="cred-icon">⚡</div>
-            <div class="cred-title">High Performance</div>
-            <div class="cred-desc">Endorsed to fly aircraft with 200+ HP engines</div>
+            <div class="cred-title">CFII</div>
+            <div class="cred-desc">Certified Flight Instructor – Instrument Airplane</div>
           </div>
           <div class="cred-item">
             <div class="cred-icon">⚙️</div>
@@ -647,8 +647,8 @@
 
         <div class="card">
           <div class="card-num">04</div>
-          <h3 class="card-title">Flight Reviews</h3>
-          <p class="card-body">Due for your Biennial Flight Review? Let's shake off the rust, review regulations, and make sure you're sharp and current before your next flight.</p>
+          <h3 class="card-title">Instrument Training</h3>
+          <p class="card-body">Working on instrument currency or starting your instrument rating? We’ll build scan discipline, procedures, and scenario-based IFR decision making to make you safer in the system.</p>
         </div>
 
       </div>
@@ -700,26 +700,21 @@
         <h2 class="section-title">Let's Get<br />You Flying.</h2>
         <p class="contact-tagline">Have questions, want to schedule a discovery flight, or just want to talk aviation? Reach out — I'd love to hear from you.</p>
         <div class="contact-methods">
-          <a href="tel:5035769486" class="contact-method">
-            <span class="contact-method-icon">📞</span>
+          <form class="contact-method" id="contact-request-form" data-user="sean.spoerhase" data-domain="gmail.com" onsubmit="var e=this.elements.visitorEmail.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Please enter a valid email address.');this.elements.visitorEmail.focus();return false;}var o=[this.dataset.user,'@',this.dataset.domain].join('');location.href='mailto:'+o+'?subject='+encodeURIComponent('Website inquiry')+'&body='+encodeURIComponent('Hi Sean,\n\nMy email is: '+e+'\n\nPlease reach out when you can.');return false;">
+            <span class="contact-method-icon" aria-hidden="true">✉️</span>
             <div>
-              <div class="contact-method-label">Call or Text</div>
-              <div class="contact-method-value">(503) 576-9486</div>
+              <label class="contact-method-label" for="visitor-email">Request a Callback</label>
+              <input id="visitor-email" name="visitorEmail" type="email" required placeholder="Enter your email" style="margin-top:0.45rem;padding:0.6rem 0.75rem;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.04);color:var(--text);width:100%;max-width:320px;" />
+              <button type="submit" style="margin-top:0.6rem;padding:0.55rem 0.9rem;border-radius:999px;border:1px solid rgba(245,240,232,0.35);background:transparent;color:var(--text);font:inherit;cursor:pointer;">Send Request</button>
+              <div class="contact-method-value" style="margin-top:0.45rem;">I’ll receive your message and reach out.</div>
             </div>
-          </a>
-          <a href="mailto:sean.spoerhase@gmail.com" class="contact-method">
-            <span class="contact-method-icon">✉️</span>
-            <div>
-              <div class="contact-method-label">Email</div>
-              <div class="contact-method-value">sean.spoerhase@gmail.com</div>
-            </div>
-          </a>
+          </form>
         </div>
       </div>
       <div class="contact-right">
         <div class="quote-block">
           <p class="quote-text">"The Willamette Valley is one of the most beautiful places in the world to learn to fly. Let me show you."</p>
-          <p class="quote-attr">— Sean Spoerhase, CFI</p>
+          <p class="quote-attr">— Sean Spoerhase, CFI/CFII</p>
         </div>
       </div>
     </div>
