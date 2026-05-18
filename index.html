@@ -700,20 +700,15 @@
         <h2 class="section-title">Let's Get<br />You Flying.</h2>
         <p class="contact-tagline">Have questions, want to schedule a discovery flight, or just want to talk aviation? Reach out — I'd love to hear from you.</p>
         <div class="contact-methods">
-          <a href="tel:5035769486" class="contact-method">
-            <span class="contact-method-icon">📞</span>
+          <form class="contact-method" id="contact-request-form" data-user="sean.spoerhase" data-domain="gmail.com" onsubmit="var e=this.elements.visitorEmail.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert('Please enter a valid email address.');this.elements.visitorEmail.focus();return false;}var o=[this.dataset.user,'@',this.dataset.domain].join('');location.href='mailto:'+o+'?subject='+encodeURIComponent('Website inquiry')+'&body='+encodeURIComponent('Hi Sean,\n\nMy email is: '+e+'\n\nPlease reach out when you can.');return false;">
+            <span class="contact-method-icon" aria-hidden="true">✉️</span>
             <div>
-              <div class="contact-method-label">Call or Text</div>
-              <div class="contact-method-value">(503) 576-9486</div>
+              <label class="contact-method-label" for="visitor-email">Request a Callback</label>
+              <input id="visitor-email" name="visitorEmail" type="email" required placeholder="Enter your email" style="margin-top:0.45rem;padding:0.6rem 0.75rem;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.04);color:var(--text);width:100%;max-width:320px;" />
+              <button type="submit" style="margin-top:0.6rem;padding:0.55rem 0.9rem;border-radius:999px;border:1px solid rgba(245,240,232,0.35);background:transparent;color:var(--text);font:inherit;cursor:pointer;">Send Request</button>
+              <div class="contact-method-value" style="margin-top:0.45rem;">I’ll receive your message and reach out.</div>
             </div>
-          </a>
-          <a href="mailto:sean.spoerhase@gmail.com" class="contact-method">
-            <span class="contact-method-icon">✉️</span>
-            <div>
-              <div class="contact-method-label">Email</div>
-              <div class="contact-method-value">sean.spoerhase@gmail.com</div>
-            </div>
-          </a>
+          </form>
         </div>
       </div>
       <div class="contact-right">
